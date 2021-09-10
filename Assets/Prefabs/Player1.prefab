@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4389061089182367467}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.65, y: 1.134, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4514688429555793464}
@@ -246,6 +246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b709081092fa45a2b4aeaf1d001c9119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronizePosition: 1
+  synchronizeRotation: 1
+  synchronizeVelocity: 1
+  synchronizeAngularVelocity: 1
+  synchronizeDrag: 0
+  synchronizeAngularDrag: 0
+  synchronizeInertia: 0
+  synchronizeMass: 0
+  synchronizeGravityScale: 0
 --- !u!114 &4514688429555793468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b382d63b93bdf4bbeda8299ce4a906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronizeLocalPosition: 1
+  synchronizeLocalScale: 1
+  synchronizeLocalRotation: 1
 --- !u!114 &4514688429555793447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 4514688428174460231}
   speed: 4
+  hp: 3
   jumpSpeed: 8
   force: 100
   fireDuration: 0.4
