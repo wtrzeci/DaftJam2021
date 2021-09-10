@@ -7,6 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: ballPrefabName
+      value: BallPurple
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: associatedPlayerId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514688428174460230, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4514688428174460230, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_Sprite
@@ -25,18 +40,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -51,16 +76,6 @@ PrefabInstance:
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
@@ -80,8 +95,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793465, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
-      propertyPath: predictabilityMask
-      value: 2
+      propertyPath: networkId
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793465, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -90,12 +105,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793465, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
-      propertyPath: networkId
-      value: 7
+      propertyPath: predictabilityMask
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4514688429555793469, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+    - target: {fileID: 4514688429555793466, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
-      propertyPath: associatedPlayerId
+      propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793469, guid: ddede4781f41d8a41bcfd8eadce77ea3,
@@ -103,10 +118,20 @@ PrefabInstance:
       propertyPath: ballPrefabName
       value: BallPurple
       objectReference: {fileID: 0}
+    - target: {fileID: 4514688429555793469, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: associatedPlayerId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793471, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_Name
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873713553253500283, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddede4781f41d8a41bcfd8eadce77ea3, type: 3}

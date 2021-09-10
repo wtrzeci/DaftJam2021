@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechDemo", "TechDemo.csproj", "{EB78FF5F-69FC-A13E-7A84-6068E2C3E1B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elympics", "Elympics.csproj", "{984B7550-DC58-9243-53DD-26B0F6C51EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{AA80F946-C2D5-43AE-BFE2-8FCEC5508357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrelSync", "ParrelSync.csproj", "{8337D325-19CB-55EF-8948-311F9222B32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elympics.Tests", "Elympics.Tests.csproj", "{55BA6543-3CF1-93E7-9A9D-6CD2B7856C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElympicsEditor", "ElympicsEditor.csproj", "{9E7F9C34-7763-1882-B41E-06FA498816C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickPackEditor", "JoystickPackEditor.csproj", "{FC62EBF8-D458-9E0F-E6A6-C9E84FF3FEA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB78FF5F-69FC-A13E-7A84-6068E2C3E1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB78FF5F-69FC-A13E-7A84-6068E2C3E1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB78FF5F-69FC-A13E-7A84-6068E2C3E1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB78FF5F-69FC-A13E-7A84-6068E2C3E1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984B7550-DC58-9243-53DD-26B0F6C51EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984B7550-DC58-9243-53DD-26B0F6C51EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984B7550-DC58-9243-53DD-26B0F6C51EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984B7550-DC58-9243-53DD-26B0F6C51EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA80F946-C2D5-43AE-BFE2-8FCEC5508357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA80F946-C2D5-43AE-BFE2-8FCEC5508357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA80F946-C2D5-43AE-BFE2-8FCEC5508357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA80F946-C2D5-43AE-BFE2-8FCEC5508357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8337D325-19CB-55EF-8948-311F9222B32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8337D325-19CB-55EF-8948-311F9222B32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8337D325-19CB-55EF-8948-311F9222B32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8337D325-19CB-55EF-8948-311F9222B32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55BA6543-3CF1-93E7-9A9D-6CD2B7856C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BA6543-3CF1-93E7-9A9D-6CD2B7856C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BA6543-3CF1-93E7-9A9D-6CD2B7856C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BA6543-3CF1-93E7-9A9D-6CD2B7856C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7F9C34-7763-1882-B41E-06FA498816C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7F9C34-7763-1882-B41E-06FA498816C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7F9C34-7763-1882-B41E-06FA498816C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7F9C34-7763-1882-B41E-06FA498816C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC62EBF8-D458-9E0F-E6A6-C9E84FF3FEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC62EBF8-D458-9E0F-E6A6-C9E84FF3FEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC62EBF8-D458-9E0F-E6A6-C9E84FF3FEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC62EBF8-D458-9E0F-E6A6-C9E84FF3FEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

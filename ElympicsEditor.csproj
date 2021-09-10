@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}</ProjectGuid>
+    <ProjectGuid>{9E7F9C34-7763-1882-B41E-06FA498816C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ElympicsEditor</AssemblyName>
@@ -679,7 +679,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Elympics.csproj">
-      <Project>{92B23BAF-591F-27BD-7262-3D2DE95DF110}</Project>
+      <Project>{984B7550-DC58-9243-53DD-26B0F6C51EFA}</Project>
       <Name>Elympics</Name>
     </ProjectReference>
   </ItemGroup>

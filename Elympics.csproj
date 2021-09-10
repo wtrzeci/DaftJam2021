@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{92B23BAF-591F-27BD-7262-3D2DE95DF110}</ProjectGuid>
+    <ProjectGuid>{984B7550-DC58-9243-53DD-26B0F6C51EFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Elympics</AssemblyName>
@@ -817,7 +817,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ParrelSync.csproj">
-      <Project>{5ADDAAD4-A295-05A3-C21A-AA996E585845}</Project>
+      <Project>{8337D325-19CB-55EF-8948-311F9222B32C}</Project>
       <Name>ParrelSync</Name>
     </ProjectReference>
   </ItemGroup>
