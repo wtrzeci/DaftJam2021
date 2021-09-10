@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechDemo", "TechDemo.csproj", "{053B8EEA-4840-2E44-A164-D0536DE03B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elympics", "Elympics.csproj", "{92B23BAF-591F-27BD-7262-3D2DE95DF110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F56E2F94-3F5E-8650-56BC-4CB4455861F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrelSync", "ParrelSync.csproj", "{5ADDAAD4-A295-05A3-C21A-AA996E585845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elympics.Tests", "Elympics.Tests.csproj", "{5591295B-B124-E78A-8335-101234950D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElympicsEditor", "ElympicsEditor.csproj", "{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickPackEditor", "JoystickPackEditor.csproj", "{BC963BD5-6187-1EC8-30D3-7901EA378771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053B8EEA-4840-2E44-A164-D0536DE03B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053B8EEA-4840-2E44-A164-D0536DE03B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053B8EEA-4840-2E44-A164-D0536DE03B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053B8EEA-4840-2E44-A164-D0536DE03B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B23BAF-591F-27BD-7262-3D2DE95DF110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B23BAF-591F-27BD-7262-3D2DE95DF110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B23BAF-591F-27BD-7262-3D2DE95DF110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B23BAF-591F-27BD-7262-3D2DE95DF110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56E2F94-3F5E-8650-56BC-4CB4455861F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56E2F94-3F5E-8650-56BC-4CB4455861F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56E2F94-3F5E-8650-56BC-4CB4455861F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56E2F94-3F5E-8650-56BC-4CB4455861F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADDAAD4-A295-05A3-C21A-AA996E585845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADDAAD4-A295-05A3-C21A-AA996E585845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADDAAD4-A295-05A3-C21A-AA996E585845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADDAAD4-A295-05A3-C21A-AA996E585845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5591295B-B124-E78A-8335-101234950D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5591295B-B124-E78A-8335-101234950D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5591295B-B124-E78A-8335-101234950D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5591295B-B124-E78A-8335-101234950D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAB83D2-3962-53B3-6FE2-D0E261E2B682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC963BD5-6187-1EC8-30D3-7901EA378771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC963BD5-6187-1EC8-30D3-7901EA378771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC963BD5-6187-1EC8-30D3-7901EA378771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC963BD5-6187-1EC8-30D3-7901EA378771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
