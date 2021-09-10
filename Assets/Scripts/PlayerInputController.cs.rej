@@ -1,0 +1,56 @@
+--- UnitySDK/Assets/Plugins/Elympics/Examples/TechDemo/Scripts/PlayerInputController.cs
++++ UnitySDK/Assets/Plugins/Elympics/Examples/TechDemo/Scripts/PlayerInputController.cs
+@@ -7,31 +8,37 @@ namespace TechDemo
+ 	[RequireComponent(typeof(PlayerBehaviour))]
+ 	public class PlayerInputController : ElympicsMonoBehaviour, IInitializable, IInputHandler
+ 	{
+-		[SerializeField] private Player2DInputProvider inputProvider = null;
++		[SerializeField] private PlayerFPSInputProvider inputProvider = null;
+ 
+ 		private PlayerBehaviour _playerBehaviour;
+ 
++		// Handling only one player through this input handlers, every player has the same player input controller
+ 		public void GetInputForClient(IInputWriter inputSerializer)
+ 		{
+-			inputProvider.GetRawInput(out var movement, out var fire, out var jump);
+-			SerializeInput(inputSerializer, movement, fire, jump);
++			inputProvider.GetRawInput(out var movement, out var rotation, out var fire, out var jump);
++			SerializeInput(inputSerializer, movement, rotation, fire, jump);
+ 		}
+ 
+ 		public void GetInputForBot(IInputWriter inputSerializer)
+ 		{
+-			// If you want to implement bots, you can do this here
+ 		}
+ 
+-		private static void SerializeInput(IInputWriter inputWriter, float movement, bool fire, bool jump)
++		private static void SerializeInput(IInputWriter inputWriter, Vector2 movement, Vector2 rotation, bool fire, bool jump)
+ 		{
+-			inputWriter.Write(movement);
++			inputWriter.Write(movement.x);
++			inputWriter.Write(movement.y);
++			inputWriter.Write(rotation.x);
++			inputWriter.Write(rotation.y);
+ 			inputWriter.Write(fire);
+ 			inputWriter.Write(jump);
+ 		}
+ 
+ 		public void ApplyInput(int playerId, IInputReader inputReader)
+ 		{
+-			inputReader.Read(out float movement);
++			inputReader.Read(out float forwardMovement);
++			inputReader.Read(out float rightMovement);
++			inputReader.Read(out float rightRotation);
++			inputReader.Read(out float upRotation);
+ 			inputReader.Read(out bool fire);
+ 			inputReader.Read(out bool jump);
+ 
+@@ -40,7 +47,7 @@ namespace TechDemo
+ 
+ 			if (fire)
+ 				_playerBehaviour.Fire();
+-			_playerBehaviour.Move(movement);
++			_playerBehaviour.Move(forwardMovement, rightMovement, rightRotation, upRotation);
+ 			if (jump)
+ 				_playerBehaviour.Jump();
+ 		}
