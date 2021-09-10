@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LowerObstacle.cs" />
      <Compile Include="Assets\Scripts\FirstPersonPerspectiveInitializer.cs" />
      <Compile Include="Assets\Scripts\IInputProvider.cs" />
      <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
@@ -245,40 +246,40 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.30f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="AWSSDK.Core">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/AWSSDK.Core.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/AWSSDK.Core.dll</HintPath>
  </Reference>
  <Reference Include="AWSSDK.S3">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/AWSSDK.S3.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/AWSSDK.S3.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/System.Threading.Tasks.Extensions.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Bcl.AsyncInterfaces">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Plugins/AWSSDK/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
  </Reference>
  <Reference Include="System.IO.Compression.ZipFile">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/Libraries/System.IO.Compression.ZipFile/lib/net46/System.IO.Compression.ZipFile.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/Libraries/System.IO.Compression.ZipFile/lib/net46/System.IO.Compression.ZipFile.dll</HintPath>
  </Reference>
  <Reference Include="UnityConnectors-packed">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/UnityConnectors-packed.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/UnityConnectors-packed.dll</HintPath>
  </Reference>
  <Reference Include="ElympicsApiModels-packed">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/ElympicsApiModels-packed.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/ElympicsApiModels-packed.dll</HintPath>
  </Reference>
  <Reference Include="GameBotCore">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/GameBotCore.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/GameBotCore.dll</HintPath>
  </Reference>
  <Reference Include="GameEngineCore">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/GameEngineCore.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/GameEngineCore.dll</HintPath>
  </Reference>
  <Reference Include="LobbyPublicApiClients-packed">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/LobbyPublicApiClients-packed.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/LobbyPublicApiClients-packed.dll</HintPath>
  </Reference>
  <Reference Include="MatchTcpClients-packed">
- <HintPath>/Users/witek/Desktop/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/MatchTcpClients-packed.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Assets/Plugins/Elympics/GameEngine/Libraries/MatchTcpClients-packed.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.30f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -626,43 +627,43 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.30f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/witek/Desktop/Template2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/witek/Template2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
