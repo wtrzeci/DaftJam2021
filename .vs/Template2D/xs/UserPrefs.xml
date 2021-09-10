@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ObjectSpawner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ObjectSpawner.cs" Line="31" Column="16" />
+      <File FileName="Assets/Scripts/Player2DBehaviour.cs" />
+      <File FileName="Assets/Plugins/Elympics/BehaviourPredefined/Interfaces/IUpdatable.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Template2D" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="ObjectSpawner.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Elympics" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Plugins" expanded="True">
+                  <Node name="Elympics" expanded="True">
+                    <Node name="BehaviourPredefined" expanded="True">
+                      <Node name="Interfaces" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
