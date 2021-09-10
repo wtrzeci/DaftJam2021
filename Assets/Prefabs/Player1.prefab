@@ -246,6 +246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b709081092fa45a2b4aeaf1d001c9119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronizePosition: 1
+  synchronizeRotation: 1
+  synchronizeVelocity: 1
+  synchronizeAngularVelocity: 1
+  synchronizeDrag: 0
+  synchronizeAngularDrag: 0
+  synchronizeInertia: 0
+  synchronizeMass: 0
+  synchronizeGravityScale: 0
 --- !u!114 &4514688429555793468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b382d63b93bdf4bbeda8299ce4a906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronizeLocalPosition: 1
+  synchronizeLocalScale: 1
+  synchronizeLocalRotation: 1
 --- !u!114 &4514688429555793447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b66a0dcbaaa1d4db63210ed8b5a71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterAnimator: {fileID: 4514688428174460231}
+  characterAnimator: {fileID: 0}
   speed: 4
   jumpSpeed: 8
   force: 100

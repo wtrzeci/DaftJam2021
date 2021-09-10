@@ -56,7 +56,6 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	public void Jump()
 	{
-		if (!_hasJumped && IsGrounded)
 			ApplyJump();
 	}
 
@@ -92,7 +91,6 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	// for example, timers or health lost when standing in lava
 	public void ElympicsUpdate()
 	{
-		characterAnimator.SetBool(_movingAnimatorBool, _rigidbody.velocity.sqrMagnitude > 0.5f);
 		if (_timerForFiring > 0)
 			DecreaseFiringTimer();
 
