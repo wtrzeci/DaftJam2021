@@ -5,20 +5,22 @@ using Elympics;
 
 public class ObjectCollisions : ElympicsMonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+                
+        if(collision.gameObject.name == "Player1" || collision.gameObject.name == "Player2")
+        {
+
+            collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value--; ;
+            Debug.Log(collision.gameObject.name + " hp: " + 
+                collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value);
+
+        }
+
         ElympicsDestroy(this.gameObject);
         Debug.Log("kolizja");
+
     }
+
 }
