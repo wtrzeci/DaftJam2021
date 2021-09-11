@@ -8,4 +8,9 @@ public class SceneManager : MonoBehaviour
         int currentSceneIndex = manager.GetActiveScene().buildIndex;
         manager.LoadScene(currentSceneIndex + 1);
     }
+    public void StartScene()
+    {
+        manager.LoadScene(0);
+        Debug.Log("BackToTheMiddle");
+    }
 }
