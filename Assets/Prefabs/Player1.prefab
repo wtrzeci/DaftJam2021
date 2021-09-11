@@ -302,6 +302,7 @@ MonoBehaviour:
   force: 100
   leftBoundary: -14.75
   rightBoundary: 14.75
+  bottomBoundary: -4.1
   fireDuration: 0.4
   ballPrefabName: BallGreen
   ballAnchor: {fileID: 7873713553253500283}
