@@ -1,9 +1,16 @@
 ﻿<Properties>
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ObjectCollisions.cs">
     <Files>
       <File FileName="Assets/Scripts/ObjectCollisions.cs" Line="5" Column="1" />
       <File FileName="Assets/Scripts/ObjectSpawner.cs" />
       <File FileName="Assets/Scripts/Player2DBehaviour.cs" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player2DBehaviour.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ObjectSpawner.cs" Line="19" Column="39" />
+      <File FileName="Assets/Scripts/Player2DBehaviour.cs" Line="87" Column="3" />
+>>>>>>> Stashed changes
       <File FileName="Assets/Plugins/Elympics/BehaviourPredefined/Interfaces/IUpdatable.cs" />
     </Files>
     <Pads>
@@ -13,7 +20,22 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
+<<<<<<< Updated upstream
                   <Node name="ObjectCollisions.cs" selected="True" />
+=======
+                  <Node name="Player2DBehaviour.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Elympics" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Plugins" expanded="True">
+                  <Node name="Elympics" expanded="True">
+                    <Node name="BehaviourPredefined" expanded="True">
+                      <Node name="Interfaces" expanded="True" />
+                    </Node>
+                  </Node>
+>>>>>>> Stashed changes
                 </Node>
               </Node>
             </Node>
