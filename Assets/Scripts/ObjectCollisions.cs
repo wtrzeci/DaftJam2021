@@ -17,7 +17,9 @@ public class ObjectCollisions : ElympicsMonoBehaviour
             Debug.Log(collision.gameObject.name + " hp: " + 
             collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value);
             Debug.Log("Dzwiek");
-            this.GetComponent<AudioSource>().Play();
+
+            AudioSource.PlayClipAtPoint(ObjectBonk, new Vector3(0, 0, -10));
+
 
         }
 

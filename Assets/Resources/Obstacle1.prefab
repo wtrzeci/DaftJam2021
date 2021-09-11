@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aac35204e2ea4a4c8f29892ded4d620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectBonk: {fileID: 8300000, guid: 594f317ff5aa049169151cdd18823152, type: 3}
+  ObjectBonk: {fileID: 8300000, guid: 1e991d4e607ce4efbbc442dc16b440f5, type: 3}
 --- !u!82 &-7756690320708131569
 AudioSource:
   m_ObjectHideFlags: 0
