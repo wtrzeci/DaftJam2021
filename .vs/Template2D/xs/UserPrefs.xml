@@ -5,11 +5,12 @@
       <File FileName="Assets/Scripts/BallKiller.cs" />
       <File FileName="Assets/Plugins/Elympics/ElympicsSystems/ElympicsLobbyClient.cs" />
       <File FileName="Assets/Scripts/Player2DBehaviour.cs" Line="94" Column="3" />
-      <File FileName="Assets/Scripts/ObjectCollisions.cs" Line="21" Column="77" />
+      <File FileName="Assets/Scripts/ObjectCollisions.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2a2ffe41-7447-4de4-ba0b-f9c9228c06e8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

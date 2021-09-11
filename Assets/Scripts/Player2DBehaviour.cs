@@ -100,7 +100,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 		SpawnBall();
 		_timerForFiring.Value = fireDuration;
         this.GetComponent<AudioSource>().clip = shootyshootySound;
-        this.GetComponent<AudioSource>().Play();
+        AudioSource.PlayClipAtPoint(shootyshootySound, new Vector3(0, 0, -10));
     }
 
 	private void Awake()
