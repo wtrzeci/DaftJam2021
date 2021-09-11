@@ -12,6 +12,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	[SerializeField] private float     force              = 100;
     [SerializeField] private float     leftBoundary       = -20f;
     [SerializeField] private float     rightBoundary      = 400f;
+    [SerializeField] private float     bottomBoundary     = 0f;
     [SerializeField] private float     fireDuration       = 0.4f;
 	[SerializeField] private string    ballPrefabName     = "BlueBall";
 	[SerializeField] private Transform ballAnchor        = null;
@@ -45,22 +46,23 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 		transform.localRotation = Quaternion.Euler(0, movementDirection < 0 ? 0 : 180, 0);
 	}
 
-	private void ApplyJump()
-	{
-		_rigidbody.velocity += Vector2.up * jumpSpeed;
-		_hasJumped.Value = true;
-	}
-
-	private void ApplyLanding()
-	{
-		_hasJumped.Value = false;
-	}
-
 	public void Jump()
 	{
-        if(!_hasJumped)
-			ApplyJump();
-	}
+        if (!_hasJumped)
+        {
+            _rigidbody.velocity += Vector2.up * jumpSpeed;
+            _hasJumped.Value = true;
+        }
+
+    }
+
+    public void checkIfJumpPossible()
+    {
+
+        if (this.transform.position.y <= this.bottomBoundary)
+            _hasJumped.Value = false;
+
+    }
 
 	public void Move(float horizontalAxis)
 	{
@@ -118,11 +120,12 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	// for example, timers or health lost when standing in lava
 	public void ElympicsUpdate()
 	{
-		if (_timerForFiring > 0)
+
+        if (_timerForFiring > 0)
 			DecreaseFiringTimer();
 
-		if (_rigidbody.velocity.y <= 0 && _hasJumped )
-			ApplyLanding();
+        checkIfJumpPossible();
+
 	}
 
 	private void DecreaseFiringTimer()
