@@ -7,7 +7,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	[SerializeField] private Animator  characterAnimator  = null;
 	[SerializeField] private float     speed              = 5;
-    [SerializeField] private float     hp                 = 3;
+    //[SerializeField] private float     hp                 = 3;
     [SerializeField] private float     jumpSpeed          = 10;
 	[SerializeField] private float     force              = 100;
     [SerializeField] private float     leftBoundary       = -20f;
@@ -23,13 +23,13 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	// in general, the more predictable a behaviour is the less jitter there will be in laggy network conditions
 	private readonly ElympicsFloat _timerForFiring = new ElympicsFloat();
 
+    public ElympicsFloat _hp = new ElympicsFloat();
 	private Vector3     _cachedVelocity;
 	private Rigidbody2D _rigidbody;
 
 	private ElympicsBool _hasJumped = new ElympicsBool();
 
 	private bool IsFiring => _timerForFiring > 0;
-
 
 	private void ApplyMovement(float horizontalAxis)
 	{
@@ -56,7 +56,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
     }
 
-    public void checkIfJumpPossible()
+    public void CheckIfJumpPossible()
     {
 
         if (this.transform.position.y <= this.bottomBoundary)
@@ -80,7 +80,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	private void Awake()
 	{
-		_rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
+        this._hp.Value = 3;
 	}
 
 	private void SpawnBall()
@@ -105,7 +106,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             newBall2.GetComponent<Rigidbody2D>().AddForce((newBall2.transform.right/2 + newBall2.transform.up) * force);
             
         }
-        else if (this.gameObject.name == "Player2")
+        else 
+            if (this.gameObject.name == "Player2")
         {
 
             newBall.transform.position = ballAnchor.transform.position;
@@ -124,7 +126,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
         if (_timerForFiring > 0)
 			DecreaseFiringTimer();
 
-        checkIfJumpPossible();
+        CheckIfJumpPossible();
 
 	}
 
@@ -145,8 +147,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             {
 
                 //Destroy(collision.collider.gameObject);
-                this.hp--;
-                Debug.Log(this.gameObject.name + " hp: " + hp);
+                this._hp.Value--;
+                Debug.Log(this.gameObject.name + " hp: " + _hp);
                 ElympicsDestroy(collision.collider.gameObject);
 
             }
@@ -159,24 +161,35 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             {
 
                 //Destroy(collision.collider.gameObject);
-                this.hp--;
-                Debug.Log(this.gameObject.name + " hp: " + hp);
+                this._hp.Value--;
+                Debug.Log(this.gameObject.name + " hp: " + _hp);
                 ElympicsDestroy(collision.collider.gameObject);
                 
             }
 
         }
 
+        if (this._hp.Value == 0)
+            GameOver();
+
 
     }
 
-    void PlayerBoundaries()
+    public void PlayerBoundaries()
     {
 
         if (this.transform.position.x <= leftBoundary)
             this.transform.position = new Vector3(leftBoundary, this.transform.position.y, this.transform.position.z);
         else if (this.transform.position.x >= rightBoundary)
             this.transform.position = new Vector3(rightBoundary, this.transform.position.y, this.transform.position.z);
+
+    }
+
+    public void GameOver()
+    {
+
+        Debug.Log("owo");
+        //PRZEJŚCIE NA ODPOWIEDNIĄ SCENĘ 
 
     }
 
