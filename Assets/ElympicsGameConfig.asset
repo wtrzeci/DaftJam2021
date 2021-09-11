@@ -36,12 +36,12 @@ MonoBehaviour:
   playerIdForHalfRemoteMode: 1
   testPlayers:
   - userId: 0
-    isBot: 0
+    isBot: 1
     botDifficulty: 0
     gameEngineData: 
     matchmakerData: []
   - userId: 1
-    isBot: 1
+    isBot: 0
     botDifficulty: 0
     gameEngineData: 
     matchmakerData: []
