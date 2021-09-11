@@ -2,4 +2,3 @@ Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.30f1/Editor/Data', plugins 
 Cmd: initializeCompiler
 Cmd: preprocessCompute
   insize=1953 outsize=1957 ok=1
-Cmd: shutdown
