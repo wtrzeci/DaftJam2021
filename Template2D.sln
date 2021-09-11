@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechDemo", "TechDemo.csproj", "{A386A1C6-B73B-5504-07F0-67637EFFB56B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elympics", "Elympics.csproj", "{6457EC20-75AE-D288-D251-4393B390F658}"
