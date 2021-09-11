@@ -30,7 +30,6 @@ public class ObjectSpawner : ElympicsMonoBehaviour, IUpdatable
             var newBall = ElympicsInstantiate(SpawnableObjects[index]);
             newBall.GetComponent<Rigidbody2D>().velocity = new Vector2(ObjectXVelocity, 0);
             Timer = TimerIntervals;
-            Debug.Log(index);
         }
     }
 

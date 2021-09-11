@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Elympics;
+using UnityEngine.UI;
 
 public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 {
@@ -18,6 +19,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	[SerializeField] private string    ballPrefabName     = "BlueBall";
 	[SerializeField] private Transform ballAnchor        = null;
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
+    [SerializeField] private Text hpText;
 
 	// using ElympicsFloats for timer allows you to predict their change, allowing for ball spawn prediction
 	// it's not neccessary, but without this prediction the spawned balls might appear and then disappear and appear again because of lags
@@ -93,7 +95,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	private void Awake()
 	{
         _rigidbody = GetComponent<Rigidbody2D>();
-        this._hp.Value = 3;
+        this._hp.Value = 4;
 	}
 
 	private void SpawnBall()
@@ -141,8 +143,13 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
         CheckIfJumpPossible();
 
 	}
+    private void Update()
+    {
+        hpText.text = _hp.Value.ToString();
 
-	private void DecreaseFiringTimer()
+    }
+
+    private void DecreaseFiringTimer()
 	{
 		_timerForFiring.Value -= Time.deltaTime;
 	}
