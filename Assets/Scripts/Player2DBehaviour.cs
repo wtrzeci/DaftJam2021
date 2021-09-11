@@ -22,6 +22,10 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
     [SerializeField] private Text hpText;
 
+    [SerializeField] private AudioSource wroooomSound;
+    [SerializeField] private AudioSource shootyshootySound;
+
+
 	// using ElympicsFloats for timer allows you to predict their change, allowing for ball spawn prediction
 	// it's not neccessary, but without this prediction the spawned balls might appear and then disappear and appear again because of lags
 	// in general, the more predictable a behaviour is the less jitter there will be in laggy network conditions
