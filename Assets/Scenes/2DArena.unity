@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerIntervals: 2
   SpawnableObjects:
-  - Obstacle1
+  - BallGreen
   ObjectXVelocity: -10
 --- !u!4 &298689802
 Transform:
@@ -591,6 +591,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1067909463}
   - component: {fileID: 1067909464}
+  - component: {fileID: 1067909466}
+  - component: {fileID: 1067909465}
   m_Layer: 0
   m_Name: BorderMiddle
   m_TagString: Borders
@@ -638,6 +640,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1067909465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067909462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b66a0dcbaaa1d4db63210ed8b5a71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnimator: {fileID: 0}
+  speed: 5
+  hp: 100
+  jumpSpeed: 10
+  force: 100
+  leftBoundary: -20
+  rightBoundary: 400
+  bottomBoundary: 0
+  upperBoundary: 0
+  fireDuration: 0.4
+  ballPrefabName: BlueBall
+  ballAnchor: {fileID: 0}
+  associatedPlayerId: -1
+  _hp:
+    currentValue: 0
+--- !u!114 &1067909466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067909462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334c2a3facb248ac8c1a599797c52dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceNetworkId: 0
+  networkId: 37
+  predictabilityMask: -1
+  visibilityMask: -1
 --- !u!1 &1130226305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: bottomBoundary
       value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: _hp.currentValue
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}

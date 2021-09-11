@@ -7,7 +7,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	[SerializeField] private Animator  characterAnimator  = null;
 	[SerializeField] private float     speed              = 5;
-    //[SerializeField] private float     hp                 = 3;
+    [SerializeField] private float     hp                 = 3;
     [SerializeField] private float     jumpSpeed          = 10;
 	[SerializeField] private float     force              = 100;
     [SerializeField] private float     leftBoundary       = -20f;
@@ -93,7 +93,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	private void Awake()
 	{
         _rigidbody = GetComponent<Rigidbody2D>();
-        this._hp.Value = 3;
+        this._hp.Value = hp;
 	}
 
 	private void SpawnBall()
