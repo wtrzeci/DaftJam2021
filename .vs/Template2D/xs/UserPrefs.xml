@@ -1,16 +1,11 @@
 ﻿<Properties StartupConfiguration="{82BA5EAF-0E79-39D0-DCDD-179EC1B1AC67}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BallKiller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ObjectCollisions.cs">
     <Files>
-      <File FileName="Assets/Scripts/ObjectCollisions.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/ObjectSpawner.cs" />
-      <File FileName="Assets/Scripts/Player2DBehaviour.cs" Line="114" Column="119" />
-      <File FileName="Assets/Plugins/Elympics/BehaviourPredefined/Interfaces/IUpdatable.cs" />
-      <File FileName="Assets/Scripts/LowerObstacle.cs" />
-      <File FileName="Assets/Scripts/FirstPersonPerspectiveInitializer.cs" />
-      <File FileName="Assets/Scripts/Player2DInputProvider.cs" />
-      <File FileName="Assets/SceneManager.cs" Line="10" Column="29" />
-      <File FileName="Assets/Scripts/SceneManager.cs" Line="11" Column="2" />
-      <File FileName="Assets/Scripts/BallKiller.cs" Line="26" Column="105" />
+      <File FileName="Assets/Scripts/SceneManager.cs" Line="13" Column="28" />
+      <File FileName="Assets/Scripts/BallKiller.cs" />
+      <File FileName="Assets/Plugins/Elympics/ElympicsSystems/ElympicsLobbyClient.cs" />
+      <File FileName="Assets/Scripts/Player2DBehaviour.cs" Line="94" Column="3" />
+      <File FileName="Assets/Scripts/ObjectCollisions.cs" Line="8" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

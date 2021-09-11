@@ -22,8 +22,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
     [SerializeField] private Text hpText;
 
-    [SerializeField] private AudioSource wroooomSound;
-    [SerializeField] private AudioSource shootyshootySound;
+    [SerializeField] private AudioClip wroooomSound;
+    [SerializeField] private AudioClip shootyshootySound;
 
 
 	// using ElympicsFloats for timer allows you to predict their change, allowing for ball spawn prediction
@@ -64,6 +64,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             {
                 _rigidbody.velocity += Vector2.up * jumpSpeed;
                 _hasJumped.Value = true;
+                this.GetComponent<AudioSource>().clip = wroooomSound;
+                this.GetComponent<AudioSource>().Play();
             }
 
         }
@@ -71,6 +73,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
         {
             _rigidbody.velocity += Vector2.up * jumpSpeed;
             _hasJumped.Value = true;
+            this.GetComponent<AudioSource>().clip = wroooomSound;
+            this.GetComponent<AudioSource>().Play();
         }
 
     }
@@ -95,7 +99,9 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 			return;
 		SpawnBall();
 		_timerForFiring.Value = fireDuration;
-	}
+        this.GetComponent<AudioSource>().clip = shootyshootySound;
+        this.GetComponent<AudioSource>().Play();
+    }
 
 	private void Awake()
 	{

@@ -5,6 +5,7 @@ using Elympics;
 
 public class ObjectCollisions : ElympicsMonoBehaviour
 {
+    [SerializeField] AudioClip ObjectBonk;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,7 +15,11 @@ public class ObjectCollisions : ElympicsMonoBehaviour
 
             collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value--; ;
             Debug.Log(collision.gameObject.name + " hp: " + 
-                collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value);
+            collision.gameObject.GetComponent<Player2DBehaviour>()._hp.Value);
+            Debug.Log("Dzwiek");
+
+            AudioSource.PlayClipAtPoint(ObjectBonk, new Vector3(0, 0, -10));
+
 
         }
 
