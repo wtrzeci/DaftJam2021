@@ -13,6 +13,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     [SerializeField] private float     leftBoundary       = -20f;
     [SerializeField] private float     rightBoundary      = 400f;
     [SerializeField] private float     bottomBoundary     = 0f;
+    [SerializeField] private float     upperBoundary      = 0f;
     [SerializeField] private float     fireDuration       = 0.4f;
 	[SerializeField] private string    ballPrefabName     = "BlueBall";
 	[SerializeField] private Transform ballAnchor        = null;
@@ -48,7 +49,18 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	public void Jump()
 	{
-        if (!_hasJumped)
+
+        if (this.gameObject.name == "Player1")
+        {
+
+            if (!_hasJumped)
+            {
+                _rigidbody.velocity += Vector2.up * jumpSpeed;
+                _hasJumped.Value = true;
+            }
+
+        }
+        else
         {
             _rigidbody.velocity += Vector2.up * jumpSpeed;
             _hasJumped.Value = true;
@@ -172,7 +184,6 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
         if (this._hp.Value == 0)
             GameOver();
 
-
     }
 
     public void PlayerBoundaries()
@@ -182,6 +193,13 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             this.transform.position = new Vector3(leftBoundary, this.transform.position.y, this.transform.position.z);
         else if (this.transform.position.x >= rightBoundary)
             this.transform.position = new Vector3(rightBoundary, this.transform.position.y, this.transform.position.z);
+
+        /*
+        if (this.transform.position.y < bottomBoundary)
+           this.transform.position = new Vector3(this.transform.position.x, bottomBoundary, this.transform.position.z);
+        if (this.transform.position.y > upperBoundary)
+            this.transform.position = new Vector3(this.transform.position.x, upperBoundary, this.transform.position.z);
+        */
 
     }
 
