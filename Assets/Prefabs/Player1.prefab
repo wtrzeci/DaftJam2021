@@ -300,6 +300,8 @@ MonoBehaviour:
   hp: 3
   jumpSpeed: 8
   force: 100
+  leftBoundary: -14.75
+  rightBoundary: 14.75
   fireDuration: 0.4
   ballPrefabName: BallGreen
   ballAnchor: {fileID: 7873713553253500283}

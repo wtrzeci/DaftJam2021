@@ -10,7 +10,9 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     [SerializeField] private float     hp                 = 3;
     [SerializeField] private float     jumpSpeed          = 10;
 	[SerializeField] private float     force              = 100;
-	[SerializeField] private float     fireDuration       = 0.4f;
+    [SerializeField] private float     leftBoundary       = -20f;
+    [SerializeField] private float     rightBoundary      = 400f;
+    [SerializeField] private float     fireDuration       = 0.4f;
 	[SerializeField] private string    ballPrefabName     = "BlueBall";
 	[SerializeField] private Transform ballAnchor        = null;
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
@@ -63,6 +65,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	public void Move(float horizontalAxis)
 	{
 		ApplyMovement(horizontalAxis);
+        PlayerBoundaries();
 	}
 
 	public void Fire()
@@ -161,6 +164,16 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
         }
 
+
+    }
+
+    void PlayerBoundaries()
+    {
+
+        if (this.transform.position.x <= leftBoundary)
+            this.transform.position = new Vector3(leftBoundary, this.transform.position.y, this.transform.position.z);
+        else if (this.transform.position.x >= rightBoundary)
+            this.transform.position = new Vector3(rightBoundary, this.transform.position.y, this.transform.position.z);
 
     }
 
