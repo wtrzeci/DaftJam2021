@@ -23,7 +23,7 @@ public class BallKiller : ElympicsMonoBehaviour
 
             collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>()._hp.Value -=1;
             Debug.Log(collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>()._hp.Value -= 1);
-            if (collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>()._hp.Value is 0)
+            if (collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>()._hp.Value <= 0)
             {
                 collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>().GameOver();
             }
