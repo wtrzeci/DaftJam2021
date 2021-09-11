@@ -15,7 +15,7 @@ MonoBehaviour:
   elympicsEndpoint: http://34.116.186.52:9101
   gameName: MialasKasiuKrowiRog
   gameId: e90a8232-57b4-4903-b9ec-8494a7fced6c
-  gameVersion: 1
+  gameVersion: 2
   players: 2
   gameplayScene: Assets/Scenes/2DArena.unity
   gameplaySceneAsset: {fileID: 102900000, guid: 34e5edef4dd28a34d8dfca721678c96b,
