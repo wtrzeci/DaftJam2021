@@ -8,7 +8,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	[SerializeField] private Animator  characterAnimator  = null;
 	[SerializeField] private float     speed              = 5;
     [SerializeField] private float     hp                 = 3;
-    [SerializeField] private float     jumpSpeed          = 4;
+    [SerializeField] private float     jumpSpeed          = 10;
 	[SerializeField] private float     force              = 100;
 	[SerializeField] private float     fireDuration       = 0.4f;
 	[SerializeField] private string    ballPrefabName     = "BlueBall";
@@ -57,6 +57,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	public void Jump()
 	{
+        if(!_hasJumped)
 			ApplyJump();
 	}
 
