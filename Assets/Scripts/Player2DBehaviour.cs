@@ -27,7 +27,6 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	private bool IsFiring => _timerForFiring > 0;
 
-	private bool IsGrounded => Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
 
 	private void ApplyMovement(float horizontalAxis)
 	{
@@ -119,7 +118,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 		if (_timerForFiring > 0)
 			DecreaseFiringTimer();
 
-		if (_rigidbody.velocity.y <= 0 && _hasJumped && IsGrounded)
+		if (_rigidbody.velocity.y <= 0 && _hasJumped )
 			ApplyLanding();
 	}
 

@@ -1,7 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ObjectSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ObjectCollisions.cs">
     <Files>
-      <File FileName="Assets/Scripts/ObjectSpawner.cs" Line="31" Column="16" />
+      <File FileName="Assets/Scripts/ObjectCollisions.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/ObjectSpawner.cs" />
       <File FileName="Assets/Scripts/Player2DBehaviour.cs" />
       <File FileName="Assets/Plugins/Elympics/BehaviourPredefined/Interfaces/IUpdatable.cs" />
     </Files>
@@ -12,18 +13,7 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="ObjectSpawner.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="Elympics" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Plugins" expanded="True">
-                  <Node name="Elympics" expanded="True">
-                    <Node name="BehaviourPredefined" expanded="True">
-                      <Node name="Interfaces" expanded="True" />
-                    </Node>
-                  </Node>
+                  <Node name="ObjectCollisions.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -34,6 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2a2ffe41-7447-4de4-ba0b-f9c9228c06e8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
