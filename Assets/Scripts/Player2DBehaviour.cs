@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Elympics;
 using UnityEngine.UI;
+using manager = UnityEngine.SceneManagement.SceneManager;
 
 public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 {
@@ -8,7 +9,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
 	[SerializeField] private Animator  characterAnimator  = null;
 	[SerializeField] private float     speed              = 5;
-    //[SerializeField] private float     hp                 = 3;
+    [SerializeField] private float     playerHealth       = 5;
     [SerializeField] private float     jumpSpeed          = 10;
 	[SerializeField] private float     force              = 100;
     [SerializeField] private float     leftBoundary       = -20f;
@@ -95,7 +96,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	private void Awake()
 	{
         _rigidbody = GetComponent<Rigidbody2D>();
-        this._hp.Value = 4;
+        this._hp.Value = playerHealth;
 	}
 
 	private void SpawnBall()
@@ -188,7 +189,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 
         }
 
-        if (this._hp.Value == 0)
+        if (this._hp.Value <= 0)
             GameOver();
 
     }
@@ -214,6 +215,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     {
 
         Debug.Log("owo");
+        int currentSceneIndex = manager.GetActiveScene().buildIndex;
+        manager.LoadScene(currentSceneIndex + 1);
         //PRZEJŚCIE NA ODPOWIEDNIĄ SCENĘ 
 
     }
