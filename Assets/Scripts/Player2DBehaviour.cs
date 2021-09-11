@@ -22,6 +22,13 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
     [SerializeField] private Text hpText;
 
+<<<<<<< Updated upstream
+=======
+    [SerializeField] private AudioClip wroooomSound;
+    [SerializeField] private AudioClip shootyshootySound;
+
+
+>>>>>>> Stashed changes
 	// using ElympicsFloats for timer allows you to predict their change, allowing for ball spawn prediction
 	// it's not neccessary, but without this prediction the spawned balls might appear and then disappear and appear again because of lags
 	// in general, the more predictable a behaviour is the less jitter there will be in laggy network conditions
@@ -60,6 +67,9 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             {
                 _rigidbody.velocity += Vector2.up * jumpSpeed;
                 _hasJumped.Value = true;
+                this.GetComponent<AudioSource>().clip = wroooomSound;
+                this.GetComponent<AudioSource>().Play();
+
             }
 
         }
