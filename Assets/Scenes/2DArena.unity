@@ -1874,6 +1874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
+      propertyPath: playerHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
       propertyPath: wroooomSound
       value: 
       objectReference: {fileID: 8300000, guid: dee5d5867b4bd4e8cbaef7cd75f09041, type: 3}
@@ -2118,6 +2123,11 @@ PrefabInstance:
       propertyPath: hpText
       value: 
       objectReference: {fileID: 1787453312}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: playerHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
         type: 3}
       propertyPath: wroooomSound
