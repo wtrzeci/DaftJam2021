@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallPurple
       objectReference: {fileID: 0}
+    - target: {fileID: 4555224305586181178, guid: 8de8979ffdff669488a4f2f617c69741,
+        type: 3}
+      propertyPath: parentName
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136273249420914990, guid: 8de8979ffdff669488a4f2f617c69741,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7049625418033397894, guid: 8de8979ffdff669488a4f2f617c69741,
         type: 3}
       propertyPath: m_FlipY

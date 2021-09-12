@@ -21,6 +21,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
 	[SerializeField] private Transform ballAnchor        = null;
     [SerializeField] public  int       associatedPlayerId = ElympicsPlayer.INVALID_ID;
     [SerializeField] private Text hpText;
+    [SerializeField] private float torque = 0f;
 
     [SerializeField] private AudioClip wroooomSound;
     [SerializeField] private AudioClip shootyshootySound;
@@ -115,7 +116,7 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
         // the instantiated prefab has to be in Resources with this name
 
         var newBall = ElympicsInstantiate(ballPrefabName);
-
+    
 
         if (this.gameObject.name == "Player1")
         {
@@ -124,12 +125,17 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             newBall.transform.rotation = ballAnchor.transform.rotation;
             newBall.GetComponent<Rigidbody2D>().AddForce((-newBall.transform.right/2 + newBall.transform.up) * force);
 
+            //newBall.GetComponent<Rigidbody2D>().AddTorque(torque, ForceMode2D.Impulse);
+
             var newBall2 = ElympicsInstantiate(ballPrefabName);
 
             newBall2.transform.position = ballAnchor.transform.position;
             newBall2.transform.rotation = ballAnchor.transform.rotation;
             newBall2.GetComponent<Rigidbody2D>().AddForce((newBall2.transform.right/2 + newBall2.transform.up) * force);
-            
+            newBall2.transform.localRotation = Quaternion.Euler(0, 180, 0);
+
+            //newBall.GetComponent<Rigidbody2D>().AddTorque(-torque, ForceMode2D.Impulse);
+
         }
         else 
             if (this.gameObject.name == "Player2")
@@ -138,6 +144,8 @@ public class Player2DBehaviour : ElympicsMonoBehaviour, IUpdatable
             newBall.transform.position = ballAnchor.transform.position;
             newBall.transform.rotation = ballAnchor.transform.rotation;
             newBall.GetComponent<Rigidbody2D>().AddForce((-newBall.transform.up) * force);
+            
+            newBall.GetComponent<Rigidbody2D>().AddTorque(torque, ForceMode2D.Impulse);
 
         }
 

@@ -1171,7 +1171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -47, y: -42}
+  m_AnchoredPosition: {x: -50, y: -42}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656938228
@@ -1859,18 +1859,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
+      propertyPath: force
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
       propertyPath: hpText
       value: 
       objectReference: {fileID: 566082842}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
+      propertyPath: torque
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
       propertyPath: jumpSpeed
-      value: 5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: fireDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: leftBoundary
       value: -14.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: playerHealth
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -1885,7 +1905,7 @@ PrefabInstance:
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: bottomBoundary
-      value: -4
+      value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 4025793150073481771, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -2021,7 +2041,7 @@ PrefabInstance:
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.1
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793464, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -2078,6 +2098,11 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4514688429555793466, guid: ddede4781f41d8a41bcfd8eadce77ea3,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4514688429555793471, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_Name
@@ -2086,12 +2111,12 @@ PrefabInstance:
     - target: {fileID: 7873713553253500283, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.49
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7873713553253500283, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.35
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8169721446702313148, guid: ddede4781f41d8a41bcfd8eadce77ea3,
         type: 3}
@@ -2111,13 +2136,38 @@ PrefabInstance:
     - target: {fileID: 2936331817224476001, guid: a0bd96c081922604a90d366d4429703a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.38
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: force
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
         type: 3}
       propertyPath: hpText
       value: 
       objectReference: {fileID: 1787453312}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: torque
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: fireDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
+        type: 3}
+      propertyPath: playerHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8224843345837013553, guid: a0bd96c081922604a90d366d4429703a,
         type: 3}
       propertyPath: wroooomSound

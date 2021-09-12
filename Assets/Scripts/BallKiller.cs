@@ -5,20 +5,13 @@ using Elympics;
 
 public class BallKiller : ElympicsMonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
+    [SerializeField] private string parentName;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name is "Model")
+
+        if (collision.name is "Model" /*&& collision.name.Equals(parentName)*/)
         {
 
             collision.transform.parent.gameObject.GetComponent<Player2DBehaviour>()._hp.Value -=1;
